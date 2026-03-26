@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study with Structure</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #2d3748;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2b6cb0, #2c7a7b);
+      color: white;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p  { font-size: 1.1rem; opacity: 0.9; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      background: #1a365d;
+      padding: 0.75rem 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #bee3f8;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.4rem 0.9rem;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+
+    nav a:hover { background: #2b6cb0; color: white; }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+
+    .card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .card h2   { font-size: 1.2rem; margin-bottom: 0.5rem; color: #2b6cb0; }
+    .card p    { font-size: 0.95rem; color: #4a5568; line-height: 1.6; }
+
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #2b6cb0;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .card a:hover { text-decoration: underline; }
+
+    section h2 {
+      font-size: 1.6rem;
+      color: #2b6cb0;
+      border-left: 4px solid #2c7a7b;
+      padding-left: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    /* External content section */
+    #external-content {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      margin-top: 2rem;
+    }
+
+    #external-content p { color: #4a5568; line-height: 1.7; }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #718096;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📚 Study with Structure</h1>
+    <p>Tu espacio organizado para aprender de forma efectiva</p>
+  </header>
+
+  <nav>
+    <a href="#topics">Temas</a>
+    <a href="#resources">Recursos</a>
+    <a href="#external-content">Contenido externo</a>
+  </nav>
+
+  <main>
+
+    <!-- Topics -->
+    <section id="topics" style="margin-top:2rem;">
+      <h2>📖 Temas de estudio</h2>
+      <div class="card-grid">
+
+        <div class="card">
+          <div class="card-icon">🧮</div>
+          <h2>Matemáticas</h2>
+          <p>Álgebra, cálculo, estadística y más. Conceptos estructurados con ejemplos paso a paso.</p>
+          <a href="#">Ver tema →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <h2>Programación</h2>
+          <p>Python, JavaScript, estructuras de datos y algoritmos explicados con claridad.</p>
+          <a href="#">Ver tema →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🔬</div>
+          <h2>Ciencias</h2>
+          <p>Física, química y biología. Aprendizaje basado en problemas reales.</p>
+          <a href="#">Ver tema →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🌍</div>
+          <h2>Idiomas</h2>
+          <p>Inglés, español y más. Gramática, vocabulario y práctica conversacional.</p>
+          <a href="#">Ver tema →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Resources -->
+    <section id="resources" style="margin-top:3rem;">
+      <h2>🛠️ Recursos útiles</h2>
+      <div class="card-grid">
+
+        <div class="card">
+          <div class="card-icon">📝</div>
+          <h2>Notas estructuradas</h2>
+          <p>Plantillas y guías para tomar notas de forma ordenada y efectiva.</p>
+          <a href="#">Acceder →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🗂️</div>
+          <h2>Mapas conceptuales</h2>
+          <p>Visualiza las relaciones entre conceptos para un aprendizaje más profundo.</p>
+          <a href="#">Acceder →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">⏱️</div>
+          <h2>Técnicas de estudio</h2>
+          <p>Pomodoro, spaced repetition, active recall y otras técnicas probadas.</p>
+          <a href="#">Acceder →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- External content injected by CI/CD -->
+    <section id="external-content" style="margin-top:3rem;">
+      <h2>🔗 Contenido externo</h2>
+      <div id="external-content">
+        <p>
+          Este sitio puede incorporar automáticamente contenido de otro repositorio mediante
+          GitHub Actions. Para activarlo, edita el archivo
+          <code>.github/workflows/deploy.yml</code> y reemplaza el valor de
+          <strong>EXTERNAL_REPO</strong> con la URL del repositorio que deseas usar.
+        </p>
+        <p style="margin-top:1rem;">
+          El flujo de trabajo clonará ese repositorio durante el despliegue y copiará su
+          contenido a la carpeta <code>external/</code> de este sitio.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Study with Structure • Publicado con <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+  </footer>
+
+</body>
+</html>
