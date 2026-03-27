@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programación · Study with Structure</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="content-header">
+    <h1>💻 Programación</h1>
+    <p>Python, JavaScript, estructuras de datos, algoritmos y más</p>
+  </header>
+
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="math.html">Matemáticas</a>
+    <a href="programming.html">Programación</a>
+    <a href="science.html">Ciencias</a>
+    <a href="languages.html">Idiomas</a>
+  </nav>
+
+  <div class="content-body">
+
+    <div class="topic-block">
+      <h2>🐍 Python — Fundamentos</h2>
+      <p>Python es un lenguaje de propósito general, legible y muy popular para ciencia de datos, automatización y web.</p>
+      <pre><code># Hola Mundo en Python
+print("Hola, mundo!")
+
+# Variables y tipos
+nombre = "Ana"
+edad = 20
+promedio = 9.5
+activo = True
+
+# Función
+def saludar(nombre):
+    return f"Hola, {nombre}!"
+
+print(saludar(nombre))</code></pre>
+      <ul>
+        <li>Variables, tipos de datos y operadores</li>
+        <li>Condicionales (<code>if</code>, <code>elif</code>, <code>else</code>)</li>
+        <li>Bucles (<code>for</code>, <code>while</code>)</li>
+        <li>Funciones y alcance</li>
+        <li>Listas, tuplas, diccionarios y conjuntos</li>
+      </ul>
+    </div>
+
+    <div class="topic-block">
+      <h2>🌐 JavaScript — Fundamentos</h2>
+      <p>JavaScript es el lenguaje del navegador. Se usa para hacer páginas web interactivas y para desarrollo de servidores con Node.js.</p>
+      <pre><code>// Variables
+const nombre = "Carlos";
+let edad = 22;
+
+// Función flecha
+const saludar = (nombre) => `Hola, ${nombre}!`;
+console.log(saludar(nombre));
+
+// Arreglos y métodos
+const notas = [8, 9, 7, 10];
+const promedio = notas.reduce((a, b) => a + b, 0) / notas.length;
+console.log("Promedio:", promedio);</code></pre>
+      <ul>
+        <li><code>var</code>, <code>let</code> y <code>const</code></li>
+        <li>Funciones, arrow functions y closures</li>
+        <li>DOM y eventos del navegador</li>
+        <li>Promesas y <code>async/await</code></li>
+        <li>Fetch API y JSON</li>
+      </ul>
+    </div>
+
+    <div class="topic-block">
+      <h2>🗂️ Estructuras de datos</h2>
+      <ul>
+        <li><strong>Arreglo (Array):</strong> colección ordenada de elementos de acceso por índice.</li>
+        <li><strong>Lista enlazada:</strong> nodos conectados mediante punteros.</li>
+        <li><strong>Pila (Stack):</strong> último en entrar, primero en salir (LIFO).</li>
+        <li><strong>Cola (Queue):</strong> primero en entrar, primero en salir (FIFO).</li>
+        <li><strong>Árbol binario:</strong> estructura jerárquica con un nodo raíz y subárboles.</li>
+        <li><strong>Tabla hash:</strong> búsqueda en O(1) promedio usando una función hash.</li>
+        <li><strong>Grafo:</strong> conjunto de vértices y aristas, dirigido o no dirigido.</li>
+      </ul>
+    </div>
+
+    <div class="topic-block">
+      <h2>⚙️ Algoritmos fundamentales</h2>
+      <ul>
+        <li><strong>Búsqueda lineal:</strong> O(n) — recorre elemento a elemento.</li>
+        <li><strong>Búsqueda binaria:</strong> O(log n) — requiere lista ordenada.</li>
+        <li><strong>Ordenamiento burbuja:</strong> O(n²) — compara pares adyacentes.</li>
+        <li><strong>Ordenamiento rápido (QuickSort):</strong> O(n log n) promedio.</li>
+        <li><strong>BFS/DFS:</strong> recorrido de grafos en anchura o profundidad.</li>
+        <li><strong>Programación dinámica:</strong> memoización para evitar cálculos repetidos.</li>
+      </ul>
+    </div>
+
+    <div class="topic-block">
+      <h2>🛠️ Herramientas de desarrollo</h2>
+      <ul>
+        <li><strong>Git & GitHub:</strong> control de versiones y colaboración.</li>
+        <li><strong>VS Code:</strong> editor de código con extensiones para casi todo.</li>
+        <li><strong>npm / pip:</strong> gestores de paquetes para JavaScript y Python.</li>
+        <li><strong>Terminal / Bash:</strong> línea de comandos para automatizar tareas.</li>
+        <li><strong>Docker:</strong> contenedores para entornos reproducibles.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Study with Structure · <a href="../index.html">Volver al inicio</a></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
